@@ -31,12 +31,11 @@ export default function Home() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: import("framer-motion").Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      // @ts-ignore - Spring type is valid in framer-motion but TS definition can be strict
       transition: {
         type: "spring",
         stiffness: 100
